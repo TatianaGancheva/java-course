@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Number_10 {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in,"UTF-8");
+		System.out.println("Enter side: ");
+		int side=input.nextInt();
+		System.out.println("Enter altitude: ");
+		int altitude=input.nextInt();
+		float area= (float)((side*altitude)/2);
+		System.out.println("The area of the triangle is : " + area);
+		
+		input.close();
+		
+		
+
+	}
+
+}

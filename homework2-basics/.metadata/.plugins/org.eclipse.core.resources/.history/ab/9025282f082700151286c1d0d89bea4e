@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Number_7 {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in, "UTF-8");
+		System.out.println("Enter number to check: ");
+		int num=input.nextInt();
+		num= num%5;
+		num==0;
+		System.out.println(num);
+		boolean  residue= false;
+		System.out.println("There is a residue: "+residue);
+		
+		
+		
+	
+	
+	}
+
+}

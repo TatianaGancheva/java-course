@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Number_3 {
+	
+	Scanner input = new  Scanner(System.in,"UTF-8");
+
+    System.out.println("Please enter a word: ");
+	System.out.println("Enter Name: "); 
+	String Name= input.nextLine();
+	
+	
+			 
+}

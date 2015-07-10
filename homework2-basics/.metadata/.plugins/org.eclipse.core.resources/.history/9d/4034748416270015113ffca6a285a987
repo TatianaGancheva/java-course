@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Number_7 {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in, "UTF-8");
+		System.out.println("Enter number to check: ");
+		int num=input.nextInt();
+		int num1;
+		int num2;
+		num1= num%5;
+		num2=num%7;
+		
+			
+			boolean  residue= num1!=0;
+			System.out.print("/5-there is residue:");
+			System.out.println(residue);
+		
+		
+	
+			boolean  residue2= num2!=0;
+			System.out.print("/7-there is residue:");
+			System.out.println(residue2);
+
+			input.close();
+		
+		
+		
+	
+	
+	}
+
+}
