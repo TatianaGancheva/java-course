@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Number_1 {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in,"UTF-8");
+		System.out.println("Enter Divided : ");
+		long divided=input.nextLong();
+		System.out.println("Enter Divider: ");
+		long divider=input.nextLong();
+		long quotient=divided/divider;
+		if(quotient>0){
+			System.out.println("+");
+		}else{
+			System.out.println("-");
+		}
+		input.close();
+	}
+
+}

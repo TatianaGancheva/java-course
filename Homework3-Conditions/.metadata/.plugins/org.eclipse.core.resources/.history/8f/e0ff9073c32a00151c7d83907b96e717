@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Number_4 {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in, "UTF-8");
+		System.out.println("Enter three numbers: ");
+		int a= input.nextInt();
+		int b= input.nextInt();
+		int c= input.nextInt();
+		if(a<0 || b<0 || c<0){
+			System.out.println("These numbers can not be sides of a triangle");
+		}else if(a>b+c || b> a+c || c>a+b){
+			System.out.println("These numbers can not be sides of a triangle");
+		}else{
+			System.out.println("These numbers can  be sides of a triangle");
+		}
+		input.close();
+	}
+
+}
