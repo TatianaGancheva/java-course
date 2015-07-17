@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Number_8 {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in, "UTF-8");
+		System.out.println("Enter five numbers to compare: ");
+		double num1=input.nextDouble();
+		double num2=input.nextDouble();
+		double num3=input.nextDouble();
+		double num4=input.nextDouble();
+		double num5=input.nextDouble();
+		System.out.println(num1+num2+num3+num4+num5);
+		input.close();
+
+	}
+
+}
