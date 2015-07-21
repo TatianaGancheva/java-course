@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Number_3 {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in, "UTF-8");
+		System.out.println("Please enter ten numbers to fill the array: ");
+		int [] array= new int [10];
+		 
+		for(int i=0; i< array.length ; i++){
+			array[i]=input.nextInt();
+			
+		}
+		for( int n: array){
+			System.out.print(n+ " ");
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Number_11 {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in, "UTF-8");
+		int rows=4;
+		int cols=4;
+		int [] [] Matrix= new int [rows][cols];
+		System.out.println("Enter 16 numbers for your array: ");
+		for(int i=0; i<rows; i++){
+			for(int j=0; j<cols; j++){
+				//System.out.printf("Matrix[%d,%d]", i,j);
+				Matrix[i][j]=input.nextInt();
+				
+			}
+		}
+		for(int r=0; r<Matrix.length; r++){
+			for(int c=0; c<Matrix[0].length;c++){
+				System.out.printf("%d", Matrix[r][c]);
+			}
+		}
+		input.close();
+		
+	}
+
+}

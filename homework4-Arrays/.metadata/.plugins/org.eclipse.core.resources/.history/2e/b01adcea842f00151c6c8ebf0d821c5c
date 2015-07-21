@@ -1,0 +1,38 @@
+
+public class Number_4 {
+
+	public static void main(String[] args) {
+		int rows=5;
+		int cols=6;
+		int count=1;
+		int [][] Array= new int [rows][cols];
+		//int [][] Reverse= new int [rows][cols];
+		//int a= Array.length;
+		
+		
+			for(int i=30; i>rows; i--){
+				for(int j=0; j<cols;j++){
+					Array[i][j]=count;
+					count--;
+				
+				}
+//			}for(int i1=0; i1<rows; i1++){
+//				for(int j1=0; j1<cols;j1++){
+//					Reverse[i1][j1]=
+//					count++;
+//				
+//				}
+//			}
+//		
+		
+		for(int r=0; r<Array.length; r++){
+			for(int c=0;c<Array[0].length; c++){
+				System.out.printf("%d ", Array[r][c]);
+			}
+			System.out.println();
+		}
+
+	}
+
+	}
+}

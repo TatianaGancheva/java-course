@@ -1,0 +1,51 @@
+import java.util.Scanner;
+public class Number_6_Bubble_Sort {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in, "UTF-8");
+		System.out.println("Please enter 8 numbers to sort: ");
+		int[] ArraySort=new int[8];
+		boolean s=false;
+		//boolean swaped=false;
+		for(int i=0;i<8;i++){
+			ArraySort[i]=input.nextInt();
+			
+		}
+		
+		while(s) {
+//		      boolean s = false;
+		      for(int i=1; i<ArraySort.length; i++) {
+		         int temp=0;
+		         if(ArraySort[i-1] > ArraySort[i]) {
+		            temp = ArraySort[i-1];
+		            ArraySort[i-1] = ArraySort[i];
+		            ArraySort[i] = temp;
+		            s = true;
+		         }
+		         if (!s) return;
+		      }
+		      
+		  }
+		 
+		 for(int k: ArraySort){
+			 System.out.print(k+ " ");
+		 }
+		 
+		 
+
+//		for( int j=0;j<8;j++){
+//			int temp=0;
+//			if(ArraySort[j-1]>ArraySort[j]){
+//				temp= ArraySort[j-1];
+//				ArraySort[j-1]=ArraySort[j];
+//				ArraySort[j]=temp;
+//				//swapped=true
+//			}
+//		}
+		
+//		for(int k: ArraySort){
+//			System.out.print(k+ " ");
+//		}
+	}
+
+}

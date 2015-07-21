@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Number_10 {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner (System.in, "UTF-8");
+		System.out.println("Enter the interval of numbers you want to search in: ");
+		System.out.println("From number: ");
+		int a= input.nextInt();
+		System.out.println("To number: ");
+		int b= input.nextInt();
+		int c= b-a;
+		int[] Array= new int [c];
+		//System.out.println(Array.length);
+		if(a>b){
+			System.out.println("The secon number must be bigger than the first!");
+		}
+		for(int i=0; i<b; i++){
+			for(int j=a;j<b;j++){
+				Array[i]=j;	
+			}
+			
+		}
+			
+			
+		for(int k: Array){
+			System.out.print(k+" ");
+		}
+		input.close();
+	}
+
+}

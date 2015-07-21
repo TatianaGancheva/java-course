@@ -1,0 +1,11 @@
+
+public class Number_4 {
+
+	public static void main(String[] args) {
+		//int a=30;
+		for(int i=0; i>30; i++){
+			System.out.print(i);
+		}
+
+	}
+}

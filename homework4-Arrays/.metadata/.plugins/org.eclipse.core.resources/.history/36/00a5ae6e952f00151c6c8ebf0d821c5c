@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class Number_6_Bubble_Sort {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in, "UTF-8");
+		System.out.println("How many numbers do you want to enter? :  ");
+		int numCount=input.nextInt();
+		int[] ArraySort=new int[numCount];
+		System.out.println("Enter your " +numCount+ "  numbers now please: ");
+		for(int i=0;i<ArraySort.length;i++){
+			ArraySort[i]=input.nextInt();
+			
+		}
+		
+		
+		
+		for(int i=0; i<(ArraySort.length-1);i++){
+			for( int j=0; j<(ArraySort.length-i-1);j++){
+				if(ArraySort[j-1]>ArraySort[j]){
+					
+					int temp=ArraySort[j-1];
+					ArraySort[j-1]=ArraySort[j];
+					ArraySort[j]=temp;
+				}
+			}
+		}
+		
+		
+		System.out.println("Your sorted array is: ");
+		
+		for(int k: ArraySort){
+			System.out.print(k+" ");
+		}
+		input.close();
+	
+
+	}
+
+}

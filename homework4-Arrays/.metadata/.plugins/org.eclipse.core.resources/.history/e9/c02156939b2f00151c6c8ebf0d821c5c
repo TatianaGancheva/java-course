@@ -1,0 +1,48 @@
+import java.util.Scanner;
+public class Number_5_BinarySearch {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in,"UTF-8");
+	
+		int [] Array= {2,45,5,5,6,25,8,99,120,1,0};
+		System.out.println("Enter the number you search for: ");
+		int SearchedNum=input.nextInt();
+		int start=0;
+		int end=10;
+		int position=(start+end)/2;
+		for(int i=0; i<(Array.length-1);i++){
+			for( int j=0; j<(Array.length-i-1);j++){
+				if(Array[j]>Array[j+1]){
+					
+					int temp=Array[j];
+					Array[j]=Array[j+1];
+					Array[j+1]=temp;
+				}
+			}
+		}
+		
+		//while((Array[position]!=SearchedNum)&&(start<=end)){
+			if(Array[position]>SearchedNum){
+				while((Array[position]!=SearchedNum)&&(start<=end)){
+					//if(Array[position]>SearchedNum){
+						end=position-1;
+						
+					}
+				System.out.println("Your number is in position: "+end);
+				
+					
+				}else{
+						start=position+1;
+					}
+//				end=position-1;
+//			}else{
+//				start=position+1;
+//			}
+			
+		}
+		//System.out.println();
+		
+
+	}
+
+

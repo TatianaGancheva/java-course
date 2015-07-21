@@ -1,0 +1,29 @@
+
+public class Number_4 {
+
+	public static void main(String[] args) {
+		int [][] Array=new int [5][6];
+		
+		for(int i=29; i>=1; i--){
+			System.out.print(i);
+		}
+
+	}
+}
+
+
+//backwards array print
+
+
+//int[] array = new int[] { 1, 2, 3, 4, 5 };
+////Get array size
+//int length = array.length;
+//
+//int[] reversed = new int[length];
+////Initialize the reversed array
+//for (int index = 0; index < length; index++) {
+//reversed[length - index - 1] = array[index];
+//}
+////Print the reversed array
+//System.out.println(Arrays.toString(reversed));
+

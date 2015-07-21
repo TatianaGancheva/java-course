@@ -1,0 +1,24 @@
+
+public class Number_4 {
+
+	public static void main(String[] args) {
+//		int rows=5;
+//		int cols=6;
+//		int count=30;
+		int [][] Array= {{30,29,28,27,26,25},{24,23,22,21,20,19},{18,17,16,15,14,13},{12,11,10,9,8,7},
+		{6,5,4,3,2,1}};
+		for(int r=0;r<Array.length;r++){
+			for(int c=0;c<Array.length; c++){
+				System.out.print(Array[r][c]+ "\t" + "|");
+			}
+			System.out.println();
+		}
+		
+		
+		
+
+	}
+
+	
+	}
+
