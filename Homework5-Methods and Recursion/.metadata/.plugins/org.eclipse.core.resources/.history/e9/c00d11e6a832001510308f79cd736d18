@@ -1,0 +1,52 @@
+package methods_And_Arrays;
+
+public class Number_5 {
+
+	public static void main(String[] args) {
+		int[] arr= new int[989];
+		//int reverseNum=0;
+		for(int j=0;j<arr.length; j++){
+				arr[j]=j+10;
+				int temp;
+				boolean symetric=true;
+				while(arr[j]>10){
+					temp=arr[j]%10;
+					arr[j]/=10;
+					if(temp!=(arr[j]%10)){
+						symetric= false;
+					}
+					
+				}
+				if(symetric==true){
+					System.out.println(arr[j]);
+				}
+				
+			}
+		System.out.println("a"+arr[5]);
+		System.out.println("The symetric numbers are: ");
+//		for(int j=0;j<arr.length;j++){
+//			int temp;
+//			boolean symetric=true;
+//			while(arr[j]>10){
+//				temp=arr[j]%10;
+//				arr[j]/=10;
+//				if(temp!=(arr[j]%10)){
+//					symetric= false;
+//				}
+//				
+//			}
+//			if(symetric==true){
+//				System.out.println(arr[j]);
+//			}
+			//System.out.println(reverseNum);
+//			if(arr[j]==reverseNum){
+//				System.out.println(arr[j]);
+			}
+		}
+		
+		//}
+					
+	//}
+	
+
+

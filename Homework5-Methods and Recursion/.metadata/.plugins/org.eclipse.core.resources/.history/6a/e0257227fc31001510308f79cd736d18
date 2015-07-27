@@ -1,0 +1,15 @@
+package methods_And_Arrays;
+import java.util.Random;
+public class Number_3 {
+
+	public static void main(String[] args) {
+		Random input= new Random();
+		int a= input.nextInt(10);
+		System.out.println(a);
+		int b= input.nextInt(10);
+		System.out.println(b);
+		int c= input.nextInt(10);
+		System.out.println(c);
+	}
+
+}

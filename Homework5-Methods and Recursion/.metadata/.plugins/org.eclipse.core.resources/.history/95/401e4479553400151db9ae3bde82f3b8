@@ -1,0 +1,19 @@
+package methods_And_Arrays;
+import java.util.Scanner;
+public class numer_2 {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in, "UTF-8");
+		System.out.println("Enter your name: ");
+		String name= input.nextLine();
+		PrintGreeting(name);
+		input.close();
+
+	}
+	
+	public static void PrintGreeting(String name){
+		System.out.println("Greeting " + name + " !");
+		
+
+}
+}

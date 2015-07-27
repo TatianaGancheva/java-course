@@ -1,0 +1,47 @@
+package methods_And_Arrays;
+import java.util.Scanner;
+public class Number_7 {
+	static void FindPermutations(int n,int permIndex,Boolean[] usedNumbers,int[] permutation)
+    {
+        if (permIndex == n)
+        {
+            Print(permutation);
+            return;
+        }
+        for (int i = 0; i < n; i++)
+        {
+            if (usedNumbers[i] == false)
+            {
+                permutation[permIndex] = i + 1;
+                usedNumbers[i] = true;
+                FindPermutations(n, permIndex + 1, usedNumbers, permutation);
+                usedNumbers[i] = false;
+            }
+        }
+    }
+    static void Print(int[] permutation)
+    {
+        for (int i = 0; i < permutation.length; i++)
+        {
+            System.out.println(permutation[i]);
+            if (i < permutation.length - 1)
+            {
+            	System.out.println(" ");
+            }
+        }
+        System.out.println();
+    }
+    public static void main(String[] args)
+    
+    {
+    	Scanner input= new Scanner(System.in,"UTF-8");
+    	System.out.println("Enter number: ");
+        int n = input.nextInt();
+        Boolean[] usedNumbers = new Boolean[n];
+        int[] permutation = new int[n];
+        FindPermutations(n,0,usedNumbers,permutation);
+    }
+
+
+	
+}

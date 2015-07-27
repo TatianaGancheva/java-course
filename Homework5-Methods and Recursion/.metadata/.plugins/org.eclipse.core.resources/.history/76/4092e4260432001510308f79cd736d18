@@ -1,0 +1,20 @@
+package methods_And_Arrays;
+
+public class Number_5 {
+
+	public static void main(String[] args) {
+		int[] arr= new int[989];
+		for(int i=10;i<999;i++){
+			for(int j=0;j<arr.length; j++){
+				arr[j]=i;
+			}
+		
+		}
+		for(int k: arr){
+			System.out.print(k+ " ");
+		}
+		
+
+	}
+
+}

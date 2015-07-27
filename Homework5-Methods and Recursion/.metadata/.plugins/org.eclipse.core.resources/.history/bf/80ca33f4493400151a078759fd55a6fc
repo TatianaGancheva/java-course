@@ -1,0 +1,22 @@
+package methods_And_Arrays;
+import java.util.Scanner;
+public class pres2 {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in,"UTF-8");
+		System.out.println("Enter number: ");
+		int n= input.nextInt();
+		Sum( n);
+		System.out.println(Sum(n));
+
+	}
+	public static int Sum(int n){
+		if(n>1){
+			return n+Sum(n-1);
+		}else{
+			return 0;
+		}
+	}
+	
+
+}

@@ -1,0 +1,57 @@
+package methods_And_Arrays;
+
+public class Number5 {
+
+	public static void main(String[] args) {
+		
+		symetricNums();
+	}
+	
+	public static void symetricNums(){
+		int reverse=0;
+		for(int i=10;i<=999;i++){
+			int r=i;
+			isSymmetric(r);
+			if(isSymmetric(r)==true){
+				System.out.print(r+" ");
+			}
+			
+//			printSymetric(r);
+//			if(printSymetric(r)==true){
+//				System.out.println(r);
+//	        }
+		   }
+		
+			
+		}
+	public static boolean isSymmetric(int number) {
+		  String val = String.valueOf(number); // Get the string.
+		  StringBuilder sb = new StringBuilder(val);
+		  return (val.equals(sb.reverse().toString())); // if the reverse is the same...
+		}
+	
+	
+	
+	
+	
+//	public static boolean printSymetric(int number){
+//		if (number == 0) return true;
+//        else if (number < 0) return false;
+//        int DEG_10 = (int)(Math.pow(10, (int)Math.log10(number)));
+//        //System.out.print(DEG_10+" d" );
+//
+//        while (number > 0){
+//            int dStart = number / DEG_10;
+//            int dEnd = number % 10;
+//            if (dStart != dEnd) return false;
+//            number = (number - dStart * DEG_10 - dEnd) / 10;
+//            DEG_10 /= 100;
+//        }
+//        
+//        return true;
+//        
+//		
+//	}
+}
+
+

@@ -1,0 +1,33 @@
+package methods_And_Arrays;
+
+public class Number_5 {
+
+	public static void main(String[] args) {
+		int[] arr= new int[989];
+		int reverseNum=0;
+		for(int j=0;j<arr.length; j++){
+				arr[j]=j+10;
+				
+			}
+		System.out.println(arr[1]);
+		System.out.println("The symetric numbers are: ");
+		for(int j=0;j<arr.length;j++){
+			while(arr[j]!=0){
+				reverseNum*=10;
+				reverseNum+=arr[j]%10;
+				arr[j]/=10;
+				
+			}
+			System.out.println(reverseNum);
+			if(arr[j]==reverseNum){
+				System.out.println(arr[j]);
+			}
+		}
+		
+		}
+		
+				
+	}
+	
+
+

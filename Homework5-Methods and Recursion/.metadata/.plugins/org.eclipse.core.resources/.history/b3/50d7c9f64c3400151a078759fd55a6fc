@@ -1,0 +1,28 @@
+package methods_And_Arrays;
+
+public class Number5 {
+
+	public static void main(String[] args) {
+		
+		SymetricNums();
+	}
+	
+	public static void SymetricNums(){
+		for(int i=10;i<=999;i++){
+			int r=i;
+			int reverse=r;
+			 
+		          reverse = reverse * 10;
+		          reverse = reverse + i%10;
+		          i = i/10;
+		          if(i==reverse){
+		        	  System.out.println("Reverse of entered number is "+reverse + i);
+		          }
+		      
+			 
+		   }
+			
+		}
+	}
+
+

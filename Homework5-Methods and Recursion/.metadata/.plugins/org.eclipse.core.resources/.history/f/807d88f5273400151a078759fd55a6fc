@@ -1,0 +1,35 @@
+package methods_And_Arrays;
+import java.util.Scanner;
+public class Presentatio_Task_2 {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in, "UTF-8");
+		System.out.println("enter number: ");
+		int num= input.nextInt();
+		//int sum= sumNumbersRecursively(num);
+		if(num<10){
+			System.out.println("Your number must be at least 10 or more ");
+		}else{
+			sumNumbersRecursively(num);
+			
+			//System.out.println("The sum of the numbers from 10 to "+ num+ " is : "+sum);
+		}
+		
+//		sumNumbersRecursively(num);
+//		
+//		System.out.println("The sum of the numbers from 10 to "+ num+ " is : "+sum);
+	}
+	public static void sumNumbersRecursively(int num){
+		int count=10;
+		if(num>=count){
+			int sum=num+count;
+			count++;
+			sumNumbersRecursively(num);
+			System.out.println(sum);
+		}
+		
+		//return sum;
+		
+	}
+
+}

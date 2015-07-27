@@ -1,0 +1,42 @@
+package methods_And_Arrays;
+import java.util.Scanner;
+public class PresentationTask2 {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in, "UTF-8");
+		System.out.println("Enter to wich number you want to print: ");
+		short number= input.nextShort();
+		int[] arr= new int[number];
+		int j=0;
+		for(int i=0; i<number;i++){
+			arr[i]=i+1;
+		}
+
+		for(int k: arr){
+			System.out.print(k+ " ");
+		}
+		System.out.println();
+		printSumRecursive(number,arr,j);
+		input.close();
+		int sum=printSumRecursive(number,arr,j);
+		System.out.println(sum);
+	}
+	
+	public static int printSumRecursive( int number ,int [] arr,int i){
+		
+		if(arr[i]<number){
+			int sum=0;
+			sum= arr[i];
+			sum= sum+printSumRecursive(number, arr,i+1);
+			//i++;
+			//printSumRecursive(number, arr,i);
+			return sum;
+			
+			//System.out.println(sum);
+		}else{
+			int a=0;
+			return a;
+		}
+	
+	}
+}

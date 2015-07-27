@@ -1,0 +1,38 @@
+package methods_And_Arrays;
+import java.util.Scanner;
+public class Number_1 {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in,"UTF-8");
+		System.out.println("Enter the first number: ");
+		int a=input.nextInt();
+		System.out.println("Enter the second number: ");
+		int b=input.nextInt();
+		System.out.println("Enter the third number: ");
+		int c= input.nextInt();
+		
+		int max=maxNumber(a,b);
+		//System.out.println(a +" " + b+ " " + c+ " ");
+		maxNumber(a,b);
+		maxNumber(a,c);
+		maxNumber(c,b);	
+		System.out.println(max);
+		
+		input.close();
+	}
+	
+	public static int maxNumber(int a, int b){
+		int max=0;
+		if(a>b){
+			
+			max= a;;
+		}else{
+			max = b;
+		}
+		//System.out.println(max);
+		
+		return max;
+		
+	}
+
+}
