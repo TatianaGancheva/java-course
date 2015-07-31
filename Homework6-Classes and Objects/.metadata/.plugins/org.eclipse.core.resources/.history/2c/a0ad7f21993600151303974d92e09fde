@@ -1,0 +1,37 @@
+package number_3;
+
+public class Arr {
+	private String nameShop;
+	private String location;
+	
+	public Arr(){
+		this.nameShop="Nameless";
+		this.location="Somewhere";
+		
+	}
+	public Arr(String nameShop, String location){
+		setNameShop(nameShop);
+		setLocation(location);
+	}
+	
+	
+	public String getNameShop() {
+		return nameShop;
+	}
+	public void setNameShop(String nameShop) {
+		this.nameShop = nameShop;
+	}
+	public String getLocation() {
+		return location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+
+	static int counter=0;
+	Stock[] store= new Stock[10];
+	
+	
+
+}

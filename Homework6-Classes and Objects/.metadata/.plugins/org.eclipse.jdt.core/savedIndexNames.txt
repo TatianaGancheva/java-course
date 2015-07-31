@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+D:\java\Homework6-Classes and Objects\.metadata\.plugins\org.eclipse.jdt.core
+783458295.index

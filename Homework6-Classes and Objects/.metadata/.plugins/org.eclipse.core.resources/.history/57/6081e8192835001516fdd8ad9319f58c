@@ -1,0 +1,27 @@
+package number_2;
+
+public class Car {
+	protected double price;
+	
+	public Car(){
+		this.price=0;
+	}
+	public Car(double Price){
+		this();
+		setPrice(Price);
+	}
+	public double getPrice(){
+		return price;
+	}
+	public void setPrice(double Price){
+		this.price=Price;
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

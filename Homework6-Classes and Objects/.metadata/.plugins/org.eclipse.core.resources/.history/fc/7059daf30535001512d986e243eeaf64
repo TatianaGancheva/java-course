@@ -1,0 +1,24 @@
+package presentatinTask2;
+
+public class Policeman extends Employee {
+	private int rang;
+	public Policeman(){
+		super();
+		this.rang=0;
+	}
+	public Policeman (int hoursPerMount, double Salary, int rang){
+		super(hoursPerMount, Salary);
+		setRang(rang);
+	}
+	public int getrang(){
+		return rang;
+	}
+	public void setRang(int rang){
+		this.rang=rang;
+	}
+	public void SayRang(){
+		System.out.println("My rang is: "+ this.rang);
+	}
+	
+
+}

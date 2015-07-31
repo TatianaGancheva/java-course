@@ -1,0 +1,21 @@
+package number_1;
+
+public class Cat {
+	private String name;
+	private int years;
+	
+	public Cat(){
+		this.name="";
+		this.years=0;
+	}
+	public Cat(String Name, int Years){
+		this.name=Name;
+		this.years=Years;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package number_2;
+
+public class arr  {
+	Automobile myAuto=new Automobile();
+	SUV mySUV= new SUV();
+	
+	public void fillArray(){
+		Car[]arr= new Car[10];
+		for(int i=0;i<arr.length;i++){
+			arr[i]=myAuto(32.32);
+			
+			
+		}
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+	public void print(){
+		System.out.println("");
+		
+	}
+
+}

@@ -1,0 +1,58 @@
+package number_1;
+
+public class Cat {
+	private String name;
+	private int years;
+	
+	public Cat(){
+		this.name="";
+		this.years=0;
+	}
+	public Cat(String Name, int Years){
+		this();
+		setName(Name);
+		setYears(Years);
+	}
+	public String getName(){
+		return name;
+	}
+	public void setName(String Name){
+		this.name=Name;
+		
+	}
+	public int getYears(){
+		return years;
+	}
+	public void setYears(int Years){
+		this.years=Years;
+		
+	}
+	public void Say(){
+		System.out.println("My name is: "+this.name+". I am "+this.years+" years old! They say i am the most cute from all..");
+	}
+
+	public static void main(String[] args) {
+
+		String [] CatName={"Juju","Mario","Pepi","Rijko", "Belcho", "Tania","Mimi","Magi","Sisa", "Alex"};
+		int[]Age={1,2,3,4,5,6,7,8,9};
+		//CatName[]=;//,"Rijko", "Belcho", "Tania","Mimi","Magi","Sisa", "Alex","Gosho", "Misho"};
+		
+//		Cat Rijko= new Cat("Rijko",2);
+//		Cat Juju= new Cat();
+//	
+		Cat[] arr=new Cat[9];
+		for(int i=0;i<arr.length;i++){
+			Cat cat=arr[i];
+			String Name=CatName[i];
+			int age=Age[i];
+			Cat MyCat=new Cat(Name,age);
+			cat=MyCat;
+			MyCat.Say();
+		}
+		
+		
+		
+
+	}
+
+}

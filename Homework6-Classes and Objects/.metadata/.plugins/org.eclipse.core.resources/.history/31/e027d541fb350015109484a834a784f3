@@ -1,0 +1,9 @@
+package number_3;
+
+public class Arr extends Stock {
+	public Arr(){
+		super();
+	}
+		
+
+}

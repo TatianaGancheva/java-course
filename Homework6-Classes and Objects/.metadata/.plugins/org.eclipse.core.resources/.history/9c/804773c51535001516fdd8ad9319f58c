@@ -1,0 +1,46 @@
+package number_1;
+
+
+
+public class aaa {
+	
+	protected int hoursPerMount;
+	protected double Salary;
+
+	public aaa(){
+		this.hoursPerMount = 0;
+		this.Salary=0;
+	
+	}
+	public aaa(int hoursPerMount, double Salary){
+//		this();
+//		setHours(hoursPerMount);
+//		setSalary(Salary);
+		this.hoursPerMount=hoursPerMount;
+		this.Salary=Salary;
+		
+	}
+	public int getHours(){
+		return hoursPerMount;
+	}
+	public void setHours(int hoursPerMount){
+		this.hoursPerMount=hoursPerMount;
+	}
+	public double getSalary(){
+		return Salary;
+	}
+	public void setSalary (double Salary){
+		this.Salary=Salary;
+	}
+	public void printInfo(){
+		System.out.printf("Work hours per mount: %d and salary %d", this.hoursPerMount,this.Salary );
+	}
+	public  void main(String[] args){
+		aaa someEmployee= new aaa();
+		
+		someEmployee.printInfo();
+		aaa myEmployee1=new aaa(23, 15.5);
+		System.out.printf("%d %d",myEmployee1.hoursPerMount,myEmployee1.Salary);
+		myEmployee1.printInfo();
+	}
+	}

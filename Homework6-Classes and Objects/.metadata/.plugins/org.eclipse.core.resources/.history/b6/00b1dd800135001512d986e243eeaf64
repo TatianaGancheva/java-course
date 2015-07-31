@@ -1,0 +1,11 @@
+package presentatinTask2;
+
+public class Policeman extends Employee {
+	private int rang;
+	public Policeman(){
+		super();
+		
+	}
+	
+
+}

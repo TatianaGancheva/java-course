@@ -1,0 +1,20 @@
+package number_2;
+
+public class Automobile extends Car{
+	private double fuelConsumption;
+	
+	public Automobile(){
+		super();
+		this.fuelConsumption=0;
+		}
+	public Automobile(double fuelConsumption){
+		super(price);
+		setFuelConsumption(fuelConsumption);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

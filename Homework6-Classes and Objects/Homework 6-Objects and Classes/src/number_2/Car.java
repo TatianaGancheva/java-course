@@ -1,0 +1,63 @@
+package number_2;
+
+public class Car {
+	protected double price;
+	
+	public Car(){
+		this.price=0;
+	}
+	public Car(double Price){
+		this.price=Price;;
+		setPrice(Price);
+	}
+	public double getPrice(){
+		return price;
+	}
+	public void setPrice(double Price){
+		this.price=Price;
+	}
+	public void print(){
+		System.out.println(this.price+" is the price.");
+		
+	}
+	
+	
+
+	public static void main(String[] args) {
+		Car newCar= new Car();
+		double fuel=0;;
+		
+		double price=newCar.price;
+//		Automobile newAuto= new Automobile(price,fuel);
+//		SUV newSUV= new SUV(price,high);
+		Car[]arr= new Car[10];
+		for(int i=0;i<(arr.length)/2;i++){
+			
+			price=32.3*i;
+			fuel=5.2*i;
+			
+			Automobile newAuto= new Automobile(price,fuel);
+			arr[i]= newAuto;
+			
+		}
+		for(int i=5;i<arr.length;i++){
+			
+			Boolean [] hight={true, false,true, false,true};
+			Boolean high=hight[i-5];
+			SUV newSUV= new SUV(price,high);
+			arr[i]=newSUV;
+		}
+		
+		
+		
+		
+		Car auto1= new Car(2569.3);
+		auto1.print();
+
+	
+			
+		}
+	
+	}
+
+

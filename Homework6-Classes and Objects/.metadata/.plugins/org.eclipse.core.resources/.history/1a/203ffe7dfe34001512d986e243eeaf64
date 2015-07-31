@@ -1,0 +1,10 @@
+package presentatinTask2;
+
+public class Tatt {
+
+	public static void main(String[] args) {
+		System.out.println("Hello tataa");
+
+	}
+
+}

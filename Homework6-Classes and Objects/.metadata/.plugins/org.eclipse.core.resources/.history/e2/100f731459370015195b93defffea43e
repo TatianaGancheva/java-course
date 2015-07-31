@@ -1,0 +1,38 @@
+package exceptions;
+
+public class Person {
+	protected String email;
+	protected String pass;
+	public Person(){
+		this.email="";
+		this.pass="";
+	}
+	public Person(String email, String pass){
+		setEmail(email);
+		setPass(pass);
+	}
+	
+	
+
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPass() {
+		return pass;
+	}
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
+	public static void main(String[] args) {
+		Person myPerson1=new Person("tataiana_@.","952369");
+		Person myPerson2= new Person("koko","kakakakakak");
+		if(getEmail.length()<5&&email.)
+		
+		
+
+	}
+
+}

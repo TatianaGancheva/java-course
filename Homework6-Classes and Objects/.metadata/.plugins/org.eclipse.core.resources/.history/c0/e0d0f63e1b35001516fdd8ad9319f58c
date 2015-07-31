@@ -1,0 +1,51 @@
+package number_1;
+
+public class Cat {
+	private String name;
+	private int years;
+	
+	public Cat(){
+		this.name="";
+		this.years=0;
+	}
+	public Cat(String Name, int Years){
+		this();
+		setName(Name);
+		setYears(Years);
+	}
+	public String getName(){
+		return name;
+	}
+	public void setName(String Name){
+		this.name=Name;
+		
+	}
+	public int getYears(){
+		return years;
+	}
+	public void setYears(int Years){
+		this.years=Years;
+		
+	}
+	public void Say(){
+		System.out.println("My name is: "+this.name+". I am "+this.years+" years old! They say i am the most cute from all..");
+	}
+
+	public static void main(String[] args) {
+		String name="juju";
+		int age=20;
+		
+		Cat Rijko= new Cat("Rijko",2);
+		Cat Juju= new Cat(name,age);
+	
+		Cat[] arr=new Cat[9];
+		for(int i=0;i<arr.length;i++){
+			arr[i]=Rijko;
+		}
+		
+		
+		
+
+	}
+
+}

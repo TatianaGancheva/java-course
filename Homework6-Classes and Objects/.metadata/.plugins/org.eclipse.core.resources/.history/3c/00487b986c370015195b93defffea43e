@@ -1,0 +1,36 @@
+package number_2;
+
+public class Car {
+	protected double price;
+	
+	public Car(){
+		this.price=0;
+	}
+	public Car(double Price){
+		this.price=Price;;
+		setPrice(Price);
+	}
+	public double getPrice(){
+		return price;
+	}
+	public void setPrice(double Price){
+		this.price=Price;
+	}
+	public void print(){
+		System.out.println(this.price+" is the price.");
+		
+	}
+	
+	
+
+	public static void main(String[] args) {
+//		
+			Car auto1= new Car(2569.3);
+			auto1.print()
+;
+			
+			
+		}
+	}
+
+//}

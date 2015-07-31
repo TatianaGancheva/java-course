@@ -1,0 +1,34 @@
+package number_3;
+
+public abstract class Stock {
+	protected double price;
+	protected Boolean InStock=true;
+	
+	public Stock(){
+		this.price=0;
+		this.InStock=true;
+	}
+	public Stock(double price, Boolean InStock){
+		this();
+		setPrice(price);
+		setInStock(InStock);
+	}
+	public double getPrice(){
+		return price;
+	}
+	public void setPrice(double price){
+		this.price=price;
+	}
+	public Boolean getInStock(){
+		return InStock;
+	}
+	public void setInStock(Boolean getInStock){
+		this.InStock=getInStock;
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}
