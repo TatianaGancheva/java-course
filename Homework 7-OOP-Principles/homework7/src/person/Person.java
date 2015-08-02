@@ -1,0 +1,42 @@
+package person;
+
+public abstract class Person {
+	
+	protected String firstName;
+	protected String lastName;
+	protected int yearsExperience;
+	static int count=0;
+	public Person(){
+		this.firstName="";
+		this.lastName="";
+		this.yearsExperience=0;
+		
+		
+	}
+	public Person(String firstName, String lastName, int yearsExperience){
+		setFirstName(firstName);
+		setLastName(lastName);
+		setYearsExperience(yearsExperience);
+		count++;
+	}
+	
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public int getYearsExperience() {
+		return yearsExperience;
+	}
+	public void setYearsExperience(int yearsExperience) {
+		this.yearsExperience = yearsExperience;
+	}
+	
+}

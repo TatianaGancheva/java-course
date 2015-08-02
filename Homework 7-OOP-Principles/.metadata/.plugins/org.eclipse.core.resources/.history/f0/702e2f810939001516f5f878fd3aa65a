@@ -1,0 +1,23 @@
+package person;
+
+public class Assistant extends Lecturer {
+	private boolean title;
+	
+	public Assistant(){
+		super();
+		this.title=false;
+	}
+	public Assistant(String firstName, String lastName, 
+			int yearsExperience,String UniName,String degree){
+		super(firstName,lastName,yearsExperience,UniName);
+		isTitle(title);
+	}
+	public boolean isTitle() {
+		return title;
+	}
+	public void setTitle(boolean title) {
+		this.title = title;
+	}
+	
+
+}
