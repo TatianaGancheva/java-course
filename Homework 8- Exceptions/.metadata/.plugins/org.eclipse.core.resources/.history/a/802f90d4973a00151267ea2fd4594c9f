@@ -1,0 +1,35 @@
+package task1;
+
+public class Test {
+
+	public static void main(String[] args) {
+//		PersonalAccount person1 = new PersonalAccount(225.36, "Emilian", 9505239569L);
+
+		PersonalAccount person2 = new PersonalAccount(-5956.2323, "Tatiana", 9601010875L);
+		CoorporativeAccount firm = new CoorporativeAccount(9600.17 , "Rumen", "5656987456");
+//		errorPer will throw InvalidAccountException
+		Object errorPer = "Alibaba";
+		
+		checkForInstance(person2);
+//		checkForInstance(person1);
+		checkForInstance(firm);
+		checkForInstance(errorPer);
+		
+}
+
+public static void checkForInstance(Object object) throws InvalidAccountException {
+	if (!(object instanceof Account)) {
+		throw new InvalidAccountException();
+	}
+	if (object instanceof PersonalAccount) {
+		System.out.printf("Personal ID: %s\n", ((PersonalAccount) object).getIdNumber());
+
+	} else if (object instanceof CoorporativeAccount) {
+		System.out.printf("BULSTAT: %s\n", ((CoorporativeAccount) object).getBulstat());
+
+	}
+}
+
+	}
+
+
