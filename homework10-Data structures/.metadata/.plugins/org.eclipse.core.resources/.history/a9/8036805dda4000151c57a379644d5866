@@ -1,0 +1,50 @@
+package task_3;
+import java.util.HashMap;
+import java.util.Scanner;
+import java.util.Set;
+public class Cards {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in,"UTF-8");
+		System.out.print("Enter 5 cards: ");
+		String[]cards=new String[5];
+		for(int i=0;i<cards.length;i++){
+			cards[i]=input.nextLine();
+		}
+		checkCombination(cards);
+		input.close();
+	}
+	public static void checkCombination(String[] cards){
+		HashMap<String,Integer> card=new HashMap<String,Integer>();
+		for(String typeCard:cards){
+			Integer count=card.get(typeCard);
+			if(count==null){
+				count=0;
+			}
+			card.put(typeCard, count+1);
+		}
+		
+		Set<String>CardKind=card.keySet();
+		int pairs=0;
+		for(String cardss: CardKind){
+			int count=card.get(cardss);
+			
+			if(count==2){
+				if(pairs==0){
+					
+					System.out.println("a pair!");
+					pairs++;
+				}else if(pairs==1){
+					System.out.println("a two pair!");
+					pairs++;
+				
+				}
+			}else if(count==3){
+				System.out.println("this is a set!");
+			}else if(count==4){
+				System.out.println("four of a kind!");
+			}
+		}
+	}
+
+}

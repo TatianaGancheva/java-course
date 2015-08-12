@@ -1,0 +1,14 @@
+package task_4;
+
+import java.util.Scanner;
+import java.util.TreeMap;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in,"UTF-8");
+		TreeMap<String, ArrayList<Book>> map=new TreeMap<String, ArrayList<Book>>();
+		
+	}
+
+}
