@@ -1,0 +1,29 @@
+package task_1;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class ReversedWords {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in,"UTF-8");
+		System.out.println("Enter text to reverse: ");
+		String text1= input.nextLine();
+		input.close();
+		input = new Scanner(text1);
+		Stack<String> text = new Stack<String>();
+		String word = null;
+		
+		while (input.hasNext()) {
+			word = input.next();
+			text.push(word);
+		}
+		
+		while (!text.isEmpty()) {
+			System.out.print(text.pop() + " ");
+		}
+		
+		input.close();
+	}
+
+}
