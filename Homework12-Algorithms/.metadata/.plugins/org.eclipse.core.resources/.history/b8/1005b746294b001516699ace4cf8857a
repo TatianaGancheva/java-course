@@ -1,0 +1,24 @@
+package sortAlphabetical;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Sort {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("enter sentence:");
+		String sentence = input.nextLine();
+		
+		String[] arrayOfWords = sentence.split(" ");
+		
+		Arrays.sort(arrayOfWords);
+		
+		System.out.println("The sorted words are:");
+		for (int i = 0; i < arrayOfWords.length; i++) {
+			System.out.print(arrayOfWords[i] + " ");
+		}
+		input.close();
+	}
+
+}
