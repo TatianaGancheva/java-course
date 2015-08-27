@@ -1,0 +1,22 @@
+package threads;
+
+public class TaskPresentation extends Thread {
+	public void run(){
+		String letter="z";
+		for(int i=0;i<=1000000000;i++){
+			System.out.println(letter);
+		}
+	}
+	
+
+	public static void main(String[] args) {
+		TaskPresentation t1=new TaskPresentation();
+		t1.start();
+		numbers t2= new numbers();
+		t2.start();
+//		sleep t3= new sleep();
+//		t3.start();
+
+	}
+
+}
