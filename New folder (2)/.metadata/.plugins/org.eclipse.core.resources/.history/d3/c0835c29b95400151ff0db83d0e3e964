@@ -1,0 +1,8 @@
+
+public class mila {
+	Add dialog=new Add();
+	dialog.setModal(true);
+	dialog.setVisible(true);
+	User item = dialog.getUser();
+	
+}

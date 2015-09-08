@@ -1,0 +1,73 @@
+import java.awt.EventQueue;
+import java.awt.Font;
+
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+
+public class LotaryGame {
+
+	private JFrame frame;
+	private JTable table;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					LotaryGame window = new LotaryGame();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public LotaryGame() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 800, 600);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnAdd = new JButton("Add ");
+		btnAdd.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnAdd.setBounds(23, 513, 157, 38);
+		frame.getContentPane().add(btnAdd);
+		
+		JButton btnShowLuckyNumbers = new JButton("Show Lucky Numbers");
+		btnShowLuckyNumbers.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnShowLuckyNumbers.setBounds(214, 513, 187, 38);
+		frame.getContentPane().add(btnShowLuckyNumbers);
+		
+		JButton btnShowWinners = new JButton("Show Winners");
+		btnShowWinners.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnShowWinners.setBounds(425, 513, 157, 38);
+		frame.getContentPane().add(btnShowWinners);
+		
+		JButton btnExport = new JButton("Export");
+		btnExport.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnExport.setBounds(606, 513, 150, 38);
+		frame.getContentPane().add(btnExport);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(10, 11, 764, 491);
+		frame.getContentPane().add(scrollPane);
+		
+		table = new JTable();
+		scrollPane.setColumnHeaderView(table);
+	}
+}
