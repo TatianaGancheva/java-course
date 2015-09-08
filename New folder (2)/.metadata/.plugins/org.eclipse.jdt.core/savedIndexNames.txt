@@ -1,2 +1,0 @@
-INDEX VERSION 1.127+C:\Users\User\Desktop\java-course-me\New folder (2)\.metadata\.plugins\org.eclipse.jdt.core
-2606787412.index
