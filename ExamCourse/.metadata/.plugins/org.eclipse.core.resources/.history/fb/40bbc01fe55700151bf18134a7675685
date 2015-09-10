@@ -1,0 +1,60 @@
+package Exam;
+
+import java.util.Scanner;
+
+public class Matrix {
+
+	public static void main(String[] args) {
+		fillMatrix();
+	}
+	public static int[][] fillMatrix(){
+		
+		Scanner input= new Scanner(System.in,"UTF-8");
+		System.out.println("Enter size of side from 2 to 9: ");
+		 int side= input.nextInt();
+		 if(side<2&&side>9){
+			 System.out.println("The side MUST be between 2 and 9!");
+		 }
+		 int[][]matrix=new int[side][side];
+		
+		for(int i=0;i<side;i++){
+			for(int k=0;k<side;k++){
+				System.out.println("Enter number to fill the matrix: ");
+				matrix[i][k]=input.nextInt();
+			}
+		}
+		
+		System.out.println("Your matrix looks like that: ");
+		for(int r=0; r<matrix.length; r++){
+			for(int c=0; c<matrix[0].length;c++){
+				System.out.printf("%d  ", matrix[r][c]);
+				
+			}
+			System.out.println();
+		}
+		return matrix;
+	}
+	
+	public static int[][] rotateMatrix(int [][]matrix, int side){
+		int [][] rotated= new int[side][side];
+		for(int i=0;i<side;i++){
+			for(int k=0;k<side;k++){
+				rotated[i][k]=matrix[side-k-1][i];
+			}
+		}
+	
+			System.out.println();
+			
+			System.out.println("Your rotated matrix in 90 degree is: ");
+			for(int r=0; r<rotated.length; r++){
+				for(int c=0; c<rotated[0].length;c++){
+					System.out.printf("%d  ", rotated[r][c]);
+					
+				}
+			
+		}
+		return rotated;
+	}
+	
+
+}

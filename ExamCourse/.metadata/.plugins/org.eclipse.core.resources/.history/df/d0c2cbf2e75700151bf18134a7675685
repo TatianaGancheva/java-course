@@ -1,0 +1,23 @@
+package Exam;
+
+import java.util.Scanner;
+
+public class Test {
+
+	
+		public static void main(String[] args) {
+			Scanner input= new Scanner(System.in,"UTF-8");
+			System.out.println("Enter size of side from 2 to 9: ");
+			 int side= input.nextInt();
+			 if(side<2&&side>9){
+				 System.out.println("The side MUST be between 2 and 9!");
+			 }
+			 int[][]array=new int[side][side];
+			MatrixObject matrix= new MatrixObject(array,side);
+			matrix.fillMatrix(array,side);
+			matrix.sumOfTheLargest(array,side);
+			
+			
+		}
+	}
+

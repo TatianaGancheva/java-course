@@ -1,0 +1,78 @@
+package Exam;
+
+import java.util.Scanner;
+
+public class Matrix {
+	
+	public int[][] fillMatrix(int[][]array, int side){
+		Scanner input= new Scanner(System.in,"UTF-8");
+		for(int i=0;i<side;i++){
+			for(int k=0;k<side;k++){
+				System.out.println("Enter number to fill the matrix: ");
+				array[i][k]=input.nextInt();
+			}
+		}
+		input.close();
+		
+		System.out.println("Your matrix looks like that: ");
+		for(int r=0; r<array.length; r++){
+			for(int c=0; c<array[0].length;c++){
+				System.out.printf("%d  ", array[r][c]);
+				
+			}
+			System.out.println();
+		}
+		return array;
+	}
+	
+	public int[][] rotateMatrix(int [][]matrix, int side){
+		int [][] rotated= new int[side][side];
+		for(int i=0;i<side;i++){
+			for(int k=0;k<side;k++){
+				rotated[i][k]=matrix[side-k-1][i];
+			}
+		}
+	
+			System.out.println();
+			
+			System.out.println("Your rotated matrix in 90 degree is: ");
+			for(int r=0; r<rotated.length; r++){
+				for(int c=0; c<rotated[0].length;c++){
+					System.out.printf("%d  ", rotated[r][c]);
+					
+				}
+			
+		}
+		return rotated;
+	}
+	public int sumOfTheLargest(int[][]array,int side){
+		int[] rowArr=new int [side];
+		for(int k=0;k<side;k++){
+	
+			for(int i=0;i<side;i++){
+				rowArr[i]=array[i][0];
+				
+			}
+			boolean flag= false;
+			int temp,j;
+			while ( flag )
+			{
+					flag= false;    
+					for( j=0;  j < rowArr.length -1;  j++ )
+					{
+						if ( rowArr[ j ] < rowArr[j+1] )   
+						{
+	                           temp = rowArr[ j ];               
+	                           rowArr[ j ] = rowArr[ j+1 ];
+	                           rowArr[ j+1 ] = temp;
+	                          flag = true;              
+						} 
+					} 
+			} 
+		 System.out.println("The largest number from row number "+k+" is: ");
+		}
+		return 0;
+	}
+	
+
+}

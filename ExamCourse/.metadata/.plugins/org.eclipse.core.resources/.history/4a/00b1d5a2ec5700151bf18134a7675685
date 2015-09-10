@@ -1,0 +1,106 @@
+package Exam;
+
+import java.util.Scanner;
+
+public class Matrix {
+	
+	public static int[][] fillMatrix(int[][]array, int side){
+		Scanner input= new Scanner(System.in,"UTF-8");
+		
+		
+		for(int i=0;i<side;i++){
+			for(int k=0;k<side;k++){
+				System.out.println("Enter number to fill the matrix: ");
+				array[i][k]=input.nextInt();
+			}
+		}
+		input.close();
+		
+		System.out.println("Your matrix looks like that: ");
+		for(int r=0; r<array.length; r++){
+			for(int c=0; c<array[0].length;c++){
+				System.out.printf("%d  ", array[r][c]);
+				
+			}
+			System.out.println();
+		}
+		return array;
+	}
+	
+	public static int[][] rotateMatrix(int [][]matrix, int side){
+		int [][] rotated= new int[side][side];
+		for(int i=0;i<side;i++){
+			for(int k=0;k<side;k++){
+				rotated[i][k]=matrix[side-k-1][i];
+			}
+		}
+	
+			System.out.println();
+			
+			System.out.println("Your rotated matrix in 90 degree is: ");
+			for(int r=0; r<rotated.length; r++){
+				for(int c=0; c<rotated[0].length;c++){
+					System.out.printf("%d  ", rotated[r][c]);
+					
+				}
+				System.out.println();
+			
+		}
+		return rotated;
+	}
+	public static int findLargestInRow(int[][]array,int side){
+		int max=0;
+		for ( int row=0; row < array.length; row++)
+			
+			{
+			
+			     max = array[row][0];
+			
+			     for( int col = 1; col < array[row].length; col++) {
+			
+			         if ( array[row][col] > max )
+			
+			             max = array[row][col];      
+			
+			     }
+			
+			    System.out.println("Maximum in row[" + row + "]: " + max);
+			    
+			
+			}
+		return max;
+
+
+	}
+	public static int findLargestInColumn(int[][]array,int side){
+		int max=0;
+		for (int i = 0; i < array.length; i++) {
+	        max = array[0][0];
+	        for (int j = 0; j < array[i].length; j++)
+	            if (array[j][i] > max)
+	                max = array[j][i];
+	        System.out.println("Maximum in a column is: "+max );
+	    }
+	return max;
+	}
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in,"UTF-8");
+		System.out.println("Enter size of side from 2 to 9: ");
+		 int side= input.nextInt();
+		 if(side<2 && side>9){
+			
+			System.out.println("The side MUST be between 2 and 9!");
+			 return;
+			 
+		 }
+		 int[][]array=new int[side][side];
+		//MatrixObject matrix= new MatrixObject(array,side);
+		fillMatrix(array,side);
+		rotateMatrix(array,side);
+		findLargestInRow(array,side);
+		findLargestInColumn(array,side);
+		
+		
+	}
+
+}

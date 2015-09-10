@@ -1,0 +1,10 @@
+package Exam;
+
+import java.util.Scanner;
+
+public class Matrix {
+	Scanner input=new Scanner(System.in,"UTF-8");
+	System.out.println("From number: ");
+	
+	
+}
